@@ -1,0 +1,90 @@
+
+.upper{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.upper .img-box{
+    border-radius: 15px;
+    padding: auto;
+    width: 45vw;
+    margin-left: 8vw;
+    margin-top: 25px;
+    background-image: url('../Images/contact.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(-10px 10px 10px black);
+}
+.upper .contact-form{
+    box-shadow: 4px 4px 10px 3px black;
+    position: relative;
+    top: 3vw;
+    margin:  5px auto;
+    width: 35vw;
+    padding: 20px;
+    
+    border-radius: 10px;
+}
+input{
+    padding: 3px;
+    margin: 0px auto;
+}
+#name,#email{
+    width: 15vw;
+}
+#subject{
+    width: 30.5vw;
+}
+
+.map{
+        margin: 20px auto;
+        min-height: 40vh;
+}
+iframe{
+    width: 75vw;
+    margin: 20px 25px;
+    height: 60vh;
+    position: relative;
+    left: 10vw;
+    border-radius: 10px;
+}
+@media screen and (max-width:1200px){
+    .upper{
+        flex-direction: column-reverse; 
+    }
+    .upper .img-box{
+        height: 60vh;
+        width: 55%;
+        margin: 25px auto;
+        border: 2px solid black;
+        background-size: cover;
+    }
+    .upper .contact-form{      
+        width: 75%;
+        margin: 50px auto;
+    }
+    input{
+        padding: 3px;
+        margin: 0px auto;
+    }
+    #name,#email{
+        width: 45%; 
+    }
+    #subject{
+        width: 95%;
+    }
+    textarea{
+        width: 95%;
+    }
+    iframe{
+        height: 75%;
+    }  
+    
+}
+@media screen and (max-width:750px) {
+    .upper .img-box{
+        background: none;
+        height: 0px;
+        width: 100%;
+    }
+}

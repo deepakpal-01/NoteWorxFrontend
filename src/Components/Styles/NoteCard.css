@@ -1,0 +1,43 @@
+.card{
+    position: relative;
+    box-shadow: 2px 2px 3px 3px rgb(64, 62, 62);
+    transition: all 0.15s linear 0s;
+    cursor: pointer;
+    background-color: #dee2e6;
+    padding: 3px;
+    max-width: 18rem;
+    min-width: 16rem;
+}
+
+.card:hover{
+    transform: scale(1.019);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;    
+}
+.util-btn{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.util-btn i{
+    color: rgb(44, 80, 179);
+}
+.util-btn i:hover{
+    color: rgb(9, 27, 77);
+}
+.desc-li{
+    min-height: 20vh;
+}
+.tag-li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@media screen and (max-width:1350px) {
+    .card{
+        /* max-width: 17vw; */
+        min-width: 15vw;
+    }
+}
